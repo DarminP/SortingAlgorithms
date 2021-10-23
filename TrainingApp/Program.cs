@@ -92,6 +92,7 @@ namespace TrainingApp
                     Console.WriteLine("It took {0:0.00} ms too sort.\n", finishInsertion.TotalMilliseconds);
                     break;
                 case 6:
+                    //updated
                     Console.WriteLine(" You choosed lambda Sort!");
                     DateTime startTimeLambda = DateTime.Now;
                     var arrayLambda = Array.OrderBy(x => x);
