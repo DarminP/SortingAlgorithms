@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using DynamicLink;
 
 namespace TrainingApp
@@ -92,13 +93,19 @@ namespace TrainingApp
                     break;
                 case 6:
                     Console.WriteLine(" You choosed lambda Sort!");
-                   
+                    DateTime startTimeLambda = DateTime.Now;
+                    var arrayLambda = Array.OrderBy(x => x);
+                    Console.WriteLine("[{0}]", string.Join(", ", arrayLambda));
+                    TimeSpan finishLambda = DateTime.Now - startTimeLambda;
+                    Console.WriteLine("It took {0:0.00} ms too sort.\n", finishLambda.TotalMilliseconds);
+
                     break;
 
             }
         }
     }
 }
+                    
 
 
 
